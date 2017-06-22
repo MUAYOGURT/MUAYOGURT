@@ -1,0 +1,14 @@
+void setup()
+{
+  pinMode(5,OUTPUT);
+  pinMode(10,OUTPUT);  
+}
+
+void loop()
+{
+  int n = analogRead(A0); 
+  int a=n/4;   
+  int b=255-n/4; 
+  analogWrite(5,a); 
+  analogWrite(10,b); 
+}
